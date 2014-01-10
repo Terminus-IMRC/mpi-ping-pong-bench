@@ -11,6 +11,8 @@ CC=mpicc
 RM:=rm -f
 MPIEXEC:=mpiexec
 
+CFLAGS=-Wall -Wextra
+
 MEMSIZE:=100000
 
 MPIEXEC_ARGS:=-n 2 ./$(PROG) $(MEMSIZE)
