@@ -5,7 +5,7 @@
 PROG=mpi-ping-pong-bench
 OBJS=mpi-ping-pong-bench.c.o
 ALLDEPENDS+=$(MAKEFILE_LIST)
-TOCLEAN+=res-*.txt
+TOCLEAN+=res-*.txt core*
 
 CC=mpicc
 RM:=rm -f
