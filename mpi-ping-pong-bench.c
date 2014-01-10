@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
 			wtime_sum+=end-start;
 		}else{
 			MPI_Recv(p, memsize, MPI_CHAR, 0, 2*i+0+2, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-			MPI_Send(p, memsize, MPI_CHAR, 0, 2+i+1+2, MPI_COMM_WORLD);
+			MPI_Send(p, memsize, MPI_CHAR, 0, 2*i+1+2, MPI_COMM_WORLD);
 		}
 
 	free(p);
